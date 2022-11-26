@@ -1,0 +1,646 @@
+@import "mixins";
+
+body{
+	font-family: 'proxima_nova_altlight';
+  	color:$primary-color;
+	font-size: 40px;
+	color: #000;
+}
+
+
+ul,li{
+	@include nospace();
+	list-style:none;
+}
+
+
+//.container-fluid{padding:0;}
+.h100 {height: 100%;}
+.relative {position: relative;}
+.full-height{
+	width:100%;
+	height: 100vh;
+}
+
+
+#fp-nav ul li .fp-tooltip{ color: #ccc;}
+#fp-nav ul li a span{ background: #ddd;}
+.btm-border{
+	@include gradiant();
+	height:10px;
+	width:100%;
+	position: absolute;
+    bottom: 0;
+	@media (max-width: 1024px) {display: none;}
+    @media (max-width: 767px) {display: none;}
+    @media (max-width: 576px) {display: none;}
+}
+
+.df {display: flex;}
+
+
+.section { padding: 0 50px;
+	@media (max-width: 991px) {
+		border-bottom: 2px solid #ccc;
+	}
+	&:last-child {border-bottom: none;}
+	
+	.header { position: absolute; top: 20px; left: 0; padding: 0 50px; display: block; 
+		@media (max-width: 567px) {position: inherit; padding:  0 20px;}
+		.left {text-align: left;display: flex; align-items: center;
+			.logo { border-right: 1px solid #d1d1d1; display: inline-block; padding-right: 15px; width:200px;
+				
+				@media (max-width: 991px) {width: 40%;}
+				 
+				@media (max-width: 767px) {display: inline-block; justify-content: center;align-items: center; }
+				
+				img { max-width: 100%;
+				@media (max-width: 767px) {margin-top: 0px;}
+				}
+			}
+			.title {display: inline-block; font-size: 30px;
+    font-family: 'proxima_nova_altsemibold'; padding-left: 15px;   color: #303033; 
+				@media (max-width: 991px) {font-size: 18px;	}
+				@media (max-width: 767px) {font-size: 15px;	}
+				@media (max-width: 567px) {font-size: 12px;	}
+			}
+		}
+		.right {text-align: right; position: relative;
+			@media (max-width: 767px) {
+				text-align: center;	
+				}
+			img {max-width: 70%; margin-right: -55px; margin-top: 0px;
+				
+				@media (min-width: 1600px) { 
+				 max-width: 60%;
+				}
+				
+				@media (max-width: 991px) { position: absolute;
+				 top: 5px; right: -50px; margin-right: inherit; margin-top: inherit; max-width: 92%;
+				}
+				
+				@media (max-width: 768px) { position: absolute;
+				 top: 0px; right: -34px; margin-right: inherit; margin-top: inherit; max-width: 140%;
+				}
+				
+			@media (max-width: 576px) { position: absolute;
+				 top: 0px; right: -10px; margin-right: inherit; margin-top: inherit; max-width: 140%;
+				}
+				
+			}
+			@media(min-width: 992px){
+			.black {display: none;}
+		}
+		@media(max-width: 991px){
+			.white {display: none;}
+		}
+		}
+	}
+}
+
+
+/*-------section1--------*/
+#section1 { 
+	position: relative;
+	background-image: url(../images/airvting/contact-bg1.svg), url(../images/airvting/contact-bg2.svg) ;
+	background-position: left top, right bottom;
+	background-repeat: no-repeat;
+	background-size: 40%, 40%;
+	background-color: #f3f6f8;
+	margin: 0;
+	
+	@media (max-width: 991px) {padding: 50px 0; height: auto !important;}
+	
+	.copyright {position: absolute; left: 0; bottom: 15px; font-size: 14px; font-weight: bold; display: block; text-align: center;}
+	
+	
+	
+	.swing-live {display: flex;justify-content: center;align-items: center;
+		.title { 
+			h1 {padding: 0 0 40px 0; display: block; font-size: 50px; font-family: 'proxima_nova_altbold'; text-align: center; text-transform: uppercase;
+		
+		@media(max-width: 991px){font-size: 27px; padding-bottom: 20px;}
+		}
+		}
+		
+        .left-1 { background: #fff;  padding: 57px 0px; border-right: 1px solid #f2f5f7; border-radius: 60px 0 0 60px; box-shadow: 0px 0px 20px #dddddd;
+			@media (max-width: 767px) {
+				padding: 35px; border-radius: 40px 40px 0 0; border-bottom: 3px solid #f2f5f7;
+			}
+			span { text-align: center; display: block;margin-top: 40px;
+                p{
+                    font-size: 13px;text-transform: uppercase;color: #fff;background: #252627;border-radius: 10px;padding: 3.6px 10px 2px 10px;line-height: 11px;letter-spacing: 1px;display: inline-block;position: absolute;left: 24%;transform: translate(-50%, -50%);margin-bottom: 0;top: 36%;
+                }
+				@media (max-width: 991px) { 
+				border-radius: 0 70px 70px 0;;
+				}
+				img {max-width: 100%;
+				
+					
+				}
+				
+			}
+		}
+		.right-1 { background: #fff;  padding: 66px 50px; border-radius: 0 60px  60px 0; box-shadow: 10px 0px 20px #dddddd;
+			
+			@media (max-width: 1500px) {
+				padding: 65px 50px;
+			}
+			
+			
+			
+			@media (max-width: 767px) {
+				padding: 35px; border-radius: 0 0 40px 40px; box-shadow: 10px 10px 20px #dddddd;
+			}
+			
+			span {font-size: 17px; display: block; color: #000; font-weight: bold; 
+			display: flex;
+    justify-content: center;
+    align-items: center;
+			
+				@media (max-width: 767px) {
+		padding-left: 0px; text-align: center;
+	}
+				img {max-width: 52%; display: block; margin-top: 10px; margin-bottom: 10px;
+					
+					@media (max-width: 767px) {
+						max-width: 50%; margin:10px auto; 
+					}
+			}
+				
+			}
+			
+			
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.row {margin: 0 15px;}
+	}
+		
+}
+
+/*-------section2--------*/
+#section2 { position: relative; 
+	
+	background-image: url(../images/airvting/bg-2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	@media(max-width: 576px){ background:none;}
+	
+	.header {.logo {border: none; margin-top: -10px;}}
+	.container-fluid {
+		@media(max-width: 991px){ padding: 0;}
+	}
+	.left-2 { display: flex;align-items: center;
+		h2 {padding: 100px 0 0px 0px; display: block; font-size: 45px; color: #000; font-family: 'gilroyextrabold'; line-height: 50px;
+		
+		@media(max-width: 991px){margin-top: 30px; font-size: 30px!important; line-height: 40px!important; padding-left: 25px;}
+		@media(max-width: 576px){ padding: 30px 0 0px 0px;}
+			br {
+				@media(max-width: 576px){display: none;}
+			}
+		}
+	}
+	
+	.right-2 { 
+		@media(max-width: 991px){ padding-left: 20px; padding-bottom: 20px; background: #fff;}
+		
+		h2 {padding: 20px 0 0px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold'; color: #384f9d; width: 100%;
+		
+		@media(max-width: 991px){font-size: 25px;}
+		}
+		
+	}
+	
+	
+}
+
+/*-------section3--------*/
+#section3 { position: relative; 
+	
+//	background-image: url(../images/airvting/img-2.jpg);
+//	background-position: 66% 91%;
+//	background-repeat: no-repeat;
+//	background-size: 16%;
+//	display: flex;
+//	align-items: flex-start;
+	
+	@media(max-width: 576px){ background:none;}
+	
+	.header {.logo {border: none;}}
+	
+	.top-4 {margin-top: 8%;
+		@media(max-width: 576px){margin-top: 0px;}
+	}
+	.left-3 { padding-right: 70px;
+		@media(max-width: 991px){padding-right: 10px;}
+		span { display: block;
+			img {}
+		}
+		h2 {padding: 20px 0 20px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold'; position: relative;
+		
+		}
+		p {display: block; font-size: 20px;line-height: 30px; margin-bottom: 0px;
+		@media(max-width: 991px){
+			font-size: 20px;line-height: 30px; margin-bottom: 50px; 
+			}
+		
+		}
+	}
+	.right-3 {padding-left: 70px;
+		@media(max-width: 991px){padding-left: 10px;}
+		span { 
+			img { max-width: 200px; margin-top: 15px;}
+		}
+		h2 {position: relative; padding: 20px 0 20px 0;  display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold';
+			
+		
+		}
+		p {display: block; font-size: 20px;
+    line-height: 30px;
+		@media(max-width: 767px){font-size: 20px;line-height: 30px;}}
+		
+		ul.points {display: block; width: 100%;
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 0px 0 0 20px; background: url(../images/airvting/bullet2.svg) no-repeat 0px 13px; margin-bottom: 10px; 
+				
+				
+	}
+		}
+	}
+}
+
+
+
+/*-------section4--------*/
+#section4 { position: relative;  background: url(../images/airvting/bulb.jpg) no-repeat  -154% 11%; background-size: 87%;
+	
+	@media(max-width: 991px){background: none;}
+	
+//	@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+//				background-position: 56% 29%;
+//			}
+	
+	.header {.logo {border: none;}}
+	
+	.top-4 {margin-top: 0px;
+		@media(max-width: 576px){margin-top: 0px;}
+	}
+	.left-4 {padding-right: 70px;
+		@media(max-width: 991px){padding-right: 10px;}
+		span { display: block;
+			img {}
+		}
+		h2 {padding: 20px 0 20px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold'; position: relative;
+		
+			
+		}
+		
+		
+		ul.points {display: block; width: 85%;
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 0px 0 0 20px; background: url(../images/airvting/bullet2.svg) no-repeat 0px 13px; margin-bottom: 10px; 
+				
+				
+	}
+		}
+	}
+	.right-4 {padding-left: 70px; 
+		
+		@media(max-width: 991px){padding-left: 10px;}
+		span { 
+			img {}
+		}
+		h2 {position: relative; padding: 20px 0 20px 0;  display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold';
+			
+		
+		
+		}
+		ul.points {display: block; width: 85%;
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 0px 0 0 20px; background: url(../images/airvting/bullet2.svg) no-repeat 0px 13px; margin-bottom: 10px; 
+				
+				
+	}
+		}
+	}
+}
+
+/*-------section5--------*/
+#section5 { position: relative; 
+
+	
+	
+	.top-4 {margin-top: 0px;
+		@media(max-width: 576px){margin-top: 0px;}
+	}
+	
+	.box { padding: 30px; padding-bottom: 30px; border-bottom: 3px solid #ed934b;
+		@media(max-width: 576px){padding: 15px;}
+		span { display: block; width: 100%;
+			img {}
+		}
+		h2 {padding: 20px 0 10px 0; display: block; font-size: 26px; font-family: 'proxima_nova_altsemibold'; position: relative; width: 100%;
+		
+		}
+		p {display: block; font-size: 20px;line-height: 30px; margin-bottom: 2px; width: 100%; min-height: 130px;
+		@media(max-width: 991px){
+			font-size: 20px;line-height: 30px; margin-bottom: 50px; 
+			}
+		
+		}
+	}
+		
+	
+}
+
+/*-------section6--------*/
+#section6 { position: relative; 
+	
+	
+	
+	.top-4 {margin-top: 0px;
+		@media(max-width: 576px){margin-top: 0px;}
+	}
+	
+	
+	
+	.box { padding: 10px; padding-bottom: 30px; border-bottom: 3px solid #ed934b;
+		@media(max-width: 576px){padding: 15px;}
+		
+		h2 {padding: 20px 0 10px 0; display: block; font-size: 26px; font-family: 'proxima_nova_altsemibold'; position: relative;
+		}
+		
+		ul {display: block; width: 100%;
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 0px 0 0 20px; background: url(../images/airvting/bullet2.svg) no-repeat 0px 13px; margin-bottom: 10px; 
+				
+				
+	}
+		}
+		
+	}
+	
+	.one {background: url(../images/airvting/bg-1.png) no-repeat 90% 0%; background-size: 20%;}
+	.two {background: url(../images/airvting/bg-2.png) no-repeat 90% 0%; background-size: 29%;}
+	.three {background: url(../images/airvting/bg-3.png) no-repeat 90% 0%; background-size: 29%;}
+}
+
+/*-------section7--------*/
+#section7 { position: relative; overflow:hidden;
+	
+	.header .left .title {
+		
+		p {margin-bottom: 0px; font-size: 18px; color: #444;}
+	}
+	
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 25px; left: 50%; width: 77%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px; margin-top: 40px;
+		}
+			
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 73%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 83%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 75%;
+			}
+	} 
+	}
+		
+}
+
+
+/*-------section8--------*/
+#section8 { position: relative; overflow:hidden;
+	
+	.header .left .title {
+		
+		p {margin-bottom: 0px; font-size: 18px; color: #444;}
+	}
+	
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 25px; left: 50%; width: 77%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px; margin-top: 40px;
+		}
+			
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 73%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 83%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 75%;
+			}
+	} 
+	}
+		
+}
+
+/*-------section9--------*/
+#section9 { position: relative; overflow:hidden;
+	
+	.header .left .title {
+		
+		p {margin-bottom: 0px; font-size: 18px; color: #444;}
+	}
+	
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: -77px; left: 50%; width: 95%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; margin-top: 40px;
+		}
+			
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 87%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 97%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 88%;
+			}
+	} 
+	}
+		
+}
+
+
+
+/*-------section10--------*/
+#section10 { position: relative; overflow:hidden;
+	
+	.header .left .title {
+		
+		p {margin-bottom: 0px; font-size: 18px; color: #444;}
+	}
+	
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: -20px; left: 50%; width: 97%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px; margin-top: 40px;
+		}
+			
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 92%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 102%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 94%;
+			}
+	} 
+	}
+		
+}
+
+/*-------section11/12/13/14/15--------*/
+#section11,#section12,#section13,#section14,#section15 { position: relative;
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 0; left: 50%; width: 76%; bottom: 50%; transform: translate(-50%, 55%);
+		
+	@media(max-width: 991px){ position: inherit; margin-top: 60px;
+		}
+	}
+	}
+}
+
+
+/*-------section16--------*/
+#section16 {position: relative;
+	background-image: url(../images/airvting/contact-bg1.svg), url(../images/airvting/contact-bg2.svg) ;
+	background-position: left top, right bottom;
+	background-repeat: no-repeat;
+	background-size: 40%, 40%;
+	margin: 0;
+	
+	.thanks { width: 80%; padding: 25px 0; margin: 0 auto; font-size: 100px; text-align: center; text-transform: uppercase;
+		font-family: 'renogareregular'; border-bottom: 4px solid red;
+		
+		@media(max-width: 991px){  width: 95%; font-size: 80px;}
+@media(max-width: 767px){ font-size: 60px;}
+		@media(max-width: 576px){ font-size: 40px;}
+
+
+	}
+	
+	.welcome-bottom-links{margin: 50px 0;
+		
+		.bt-links {display: flex;flex-wrap: wrap;align-items: center;justify-content: center;
+			.lists{margin: 10px;
+				p.border-line{border-right: 1px solid #707070; padding-right: 40px;padding-left: 20px;font-size: 25px;
+					
+					@media(max-width: 991px){  font-size: 20px;
+						border-right:0PX;
+						.bor-none {border: none;}
+					}
+						@media(max-width: 767px){ font-size: 17px;}
+					@media(max-width: 576px){ border: none;}
+					
+					
+					img {margin-top: -7px;}
+					@media(max-width: 991px){  
+						.web { width: 10%;}
+						.mail {width: 10%;}
+						.tel {width: 12%;}
+						}
+						@media(max-width: 767px){
+						.web { width: 9%;}
+						.mail {width: 9%;}
+						.tel {width: 13%;}
+						}
+				span{ padding-left: 10px;
+				a {color: #333;
+					&:hover {color: #000; text-decoration: none;}
+				}
+				}
+			
+			}
+				.b-none {border-right: none!important;}
+		}
+}
+}
+	.footer-logo {margin: 0 auto; text-align: center;
+		img {width: 220px;}
+	}
+	
+}
+
+
+
+
+.fp-tableCell {
+	@media(max-width: 991px){
+			height: auto!important;
+		}
+}
+
+
+
+ #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14, #section15, #section16, #section17, #section18, #section19, #section20 {
+	font-size: 20px;
+	
+	@media (max-width: 991px){ 
+		height: auto !important;
+		padding:30px 20px!important;
+		h2 {font-size: 25px!important;}
+    }
+	 
+	 @media (max-width: 768px){ 
+		h2 {font-size: 20px!important;}
+    }
+	
+	@media (max-width: 567px){ 
+		.container-fluid {padding: 0;}
+    }
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

@@ -1,0 +1,2927 @@
+body {
+  font-family: 'proxima_nova_altlight';
+  color: #383838;
+  font-size: 40px;
+  color: #1c1c1c;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.full-height {
+  width: 100%;
+  height: 100vh;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: #ccc;
+}
+
+#fp-nav ul li a span {
+  background: #ddd;
+}
+
+.btm-border {
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #d6213f), color-stop(60%, #a33482));
+  background: linear-gradient(to right, #d6213f 40%, #a33482 60%);
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .btm-border {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .btm-border {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .btm-border {
+    display: none;
+  }
+}
+
+.section {
+  padding: 0 50px;
+}
+
+@media (max-width: 991px) {
+  .section {
+    border-bottom: 2px solid #ccc;
+  }
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section .header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  padding: 0 40px;
+  display: block;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .section .header {
+    padding: 0 10px 20px 10px !important;
+    position: inherit;
+  }
+}
+
+.section .header .left {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+@media (max-width: 767px) {
+  .section .header .left {
+    padding-left: 0px;
+  }
+}
+
+.section .header .left .logo {
+  display: inline-block;
+  width: 275px;
+  margin-top: -7px;
+}
+
+@media (max-width: 991px) {
+  .section .header .left .logo {
+    width: 35%;
+  }
+}
+
+@media (max-width: 767px) {
+  .section .header .left .logo {
+    display: inline-block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    margin-top: -7px;
+  }
+}
+
+.section .header .left .logo img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .section .header .left .logo img {
+    margin-top: 0px;
+  }
+}
+
+.section .header .left .title {
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'proxima_nova_altsemibold';
+  padding-left: 15px;
+  color: #303033;
+}
+
+@media (max-width: 991px) {
+  .section .header .left .title {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .section .header .left .title {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 567px) {
+  .section .header .left .title {
+    font-size: 12px !important;
+  }
+}
+
+.section .header .right {
+  text-align: right;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .section .header .right {
+    text-align: center;
+  }
+}
+
+.section .header .right img {
+  max-width: 70%;
+  margin-right: -55px;
+  margin-top: 0px;
+}
+
+@media (min-width: 1600px) {
+  .section .header .right img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 991px) {
+  .section .header .right img {
+    position: absolute;
+    top: 5px;
+    right: -50px;
+    margin-right: inherit;
+    margin-top: inherit;
+    max-width: 92%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section .header .right img {
+    position: absolute;
+    top: 0px;
+    right: -34px;
+    margin-right: inherit;
+    margin-top: inherit;
+    max-width: 140%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section .header .right img {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    margin-right: inherit;
+    margin-top: inherit;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .section .header .right .black {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .section .header .right .white {
+    display: none;
+  }
+}
+
+/*-------section1--------*/
+#section1 {
+  position: relative;
+  background-image: url(../images/fleet/contact-bg1.svg), url(../images/fleet/contact-bg2.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 40%, 40%;
+  background-color: #f3f6f8;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  #section1 {
+    padding: 50px 0;
+    height: auto !important;
+  }
+}
+
+#section1 .copyright {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+#section1 .swing-live {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section1 .swing-live .title h1 {
+  padding: 0 0 40px 0;
+  display: block;
+  font-size: 50px;
+  font-family: 'proxima_nova_altbold';
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  #section1 .swing-live .title h1 {
+    font-size: 27px;
+    padding-bottom: 20px;
+  }
+}
+
+#section1 .swing-live .left-1 {
+  background: #fff;
+  padding: 64px 0px;
+  border-right: 1px solid #f2f5f7;
+  border-radius: 60px 0 0 60px;
+  -webkit-box-shadow: 0px 0px 20px #dddddd;
+          box-shadow: 0px 0px 20px #dddddd;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  #section1 .swing-live .left-1 {
+    padding: 35px;
+    border-radius: 40px 40px 0 0;
+    border-bottom: 3px solid #f2f5f7;
+  }
+}
+
+#section1 .swing-live .left-1 span {
+  text-align: center;
+  display: block;
+  height: 109px;
+}
+
+#section1 .swing-live .left-1 span p {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #252627;
+  border-radius: 10px;
+  padding: 3.3px 10px 2px 10px;
+  line-height: 11px;
+  letter-spacing: 1px;
+  display: inline-block;
+  position: absolute;
+  left: 22.5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-bottom: 0;
+  top: 36%;
+}
+
+@media (max-width: 991px) {
+  #section1 .swing-live .left-1 span {
+    border-radius: 0 70px 70px 0;
+  }
+}
+
+#section1 .swing-live .left-1 span img {
+  max-width: 74%;
+  height: auto;
+  margin-top: 22px;
+}
+
+#section1 .swing-live .right-1 {
+  background: #fff;
+  padding: 66px 50px;
+  border-radius: 0 60px  60px 0;
+  -webkit-box-shadow: 10px 0px 20px #dddddd;
+          box-shadow: 10px 0px 20px #dddddd;
+}
+
+@media (max-width: 1500px) {
+  #section1 .swing-live .right-1 {
+    padding: 65px 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  #section1 .swing-live .right-1 {
+    padding: 35px;
+    border-radius: 0 0 40px 40px;
+    -webkit-box-shadow: 10px 10px 20px #dddddd;
+            box-shadow: 10px 10px 20px #dddddd;
+  }
+}
+
+#section1 .swing-live .right-1 span {
+  font-size: 17px;
+  display: block;
+  color: #000;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  #section1 .swing-live .right-1 span {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+#section1 .swing-live .right-1 span img {
+  max-width: 52%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  #section1 .swing-live .right-1 span img {
+    max-width: 50%;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #section1 .swing-live .left-1 {
+    padding: 54px 0;
+  }
+  #section1 .swing-live .left-1 span p {
+    font-size: 11px;
+  }
+  #section1 .swing-live .left-1 span img {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #section1 .swing-live .left-1 {
+    padding: 44px 0;
+  }
+  #section1 .swing-live .left-1 span p {
+    font-size: 7px;
+    left: 37%;
+    top: 36%;
+  }
+  #section1 .swing-live .left-1 span img {
+    max-width: 60%;
+    height: 110px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #section1 {
+    padding: 50px 0 80px 0;
+  }
+  #section1 .row {
+    margin: 0 15px;
+  }
+  #section1 .swing-live .left-1 {
+    padding: 34px 0;
+  }
+  #section1 .swing-live .left-1 span {
+    height: auto;
+  }
+  #section1 .swing-live .left-1 span p {
+    font-size: 8px;
+    left: 25;
+    top: 33%;
+    padding: 6px 8px 5px 10px;
+  }
+  #section1 .swing-live .left-1 span img {
+    max-width: 70%;
+    height: auto;
+    padding-top: 20px;
+    margin-top: 0;
+  }
+}
+
+/*-------section2--------*/
+#section2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section2:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 140px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section2 .container-fluid {
+  height: 100% !important;
+}
+
+#section2 .about-row {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section2 .about-client {
+  padding: 20px;
+  margin-right: 30px;
+  min-height: 280px;
+  border-bottom: 2px solid #376bfb;
+}
+
+#section2 .about-client h3 {
+  font-size: 34px;
+  color: #000;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-family: 'proxima_nova_altsemibold';
+}
+
+#section2 .about-client p {
+  font-size: 21px;
+  color: #000;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+#section2 .about-client p b {
+  font-family: 'proxima_nova_altsemibold';
+}
+
+#section2 .module-list {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+#section2 .module-list h3 {
+  font-size: 34px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: 'proxima_nova_altsemibold';
+}
+
+#section2 .module-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section2 .module-list ul li {
+  font-size: 21px;
+  color: #fff;
+  background: #376bfb;
+  border-radius: 50px;
+  padding: 3px 25px;
+  display: inline-block;
+  margin: 0 10px 8px 0;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section2 .about-row {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section2 .about-row {
+    margin-top: 0px;
+    margin: 0;
+  }
+  #section2 .header .left {
+    padding-left: 15px;
+  }
+  #section2 .about-client {
+    padding: 10px 10px 20px 10px;
+    margin-right: 0;
+    min-height: auto;
+    margin-bottom: 30px;
+  }
+  #section2 .about-client h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  #section2 .about-client p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  #section2 .module-list {
+    margin-top: 0;
+    padding: 0;
+  }
+  #section2 .module-list h3 {
+    font-size: 26px;
+  }
+  #section2 .module-list ul li {
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    padding: 5px 25px 7px 25px;
+  }
+}
+
+/*-------section3--------*/
+#section3 {
+  position: relative;
+  background-image: url(../images/healthcare-cs2/section3-bg.png);
+  background-repeat: no-repeat;
+  background-position: 40% 110px;
+  background-size: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section3:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section3 .container-fluid {
+  height: 100% !important;
+}
+
+#section3 .row {
+  height: 100% !important;
+}
+
+#section3 .technical-area {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section3 .technical-area h2 {
+  font-size: 34px;
+  color: #000;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  font-family: 'proxima_nova_altsemibold';
+}
+
+#section3 .technical-number {
+  background: #505050;
+  border-radius: 80px;
+  padding: 15px 45px 15px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  min-height: 110px;
+}
+
+#section3 .technical-number h3 {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  min-width: 40px;
+  font-family: 'Bebas';
+}
+
+#section3 .technical-number p {
+  font-size: 21px;
+  color: #fff;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+#section3 .solution-area {
+  padding: 155px 150px 230px 125px;
+  border-radius: 50%;
+  width: 100%;
+  height: 765px;
+  position: absolute;
+  right: -165px;
+  top: 150px;
+  background: #376bfb;
+}
+
+#section3 .solution-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+#section3 .solution-head img {
+  margin-right: 16px;
+  width: 50px;
+  margin-left: -7px;
+}
+
+#section3 .solution-head h2 {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: 'proxima_nova_altsemibold';
+}
+
+#section3 .solution-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 1px dotted #fff;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+#section3 .solution-number h3 {
+  font-size: 50px;
+  min-width: 40px;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-right: 20px;
+  font-family: 'Bebas';
+}
+
+#section3 .solution-number p {
+  font-size: 21px;
+  color: #fff;
+  line-height: 27px;
+  margin-bottom: 0;
+}
+
+#section3 .solution-number:last-child {
+  border-bottom: 0;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section3 .technical-area {
+    margin-top: 20px;
+  }
+  #section3 .technical-area h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    padding-left: 40px;
+  }
+  #section3 .technical-number {
+    min-height: 105px;
+  }
+  #section3 .technical-number h3 {
+    margin-right: 15px;
+    font-size: 45px;
+  }
+  #section3 .technical-number p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  #section3 .solution-area {
+    padding: 120px 130px 255px 115px;
+    height: 745px;
+    right: -115px;
+    top: 95px;
+  }
+  #section3 .solution-area .solution-number h3 {
+    font-size: 45px;
+  }
+  #section3 .solution-area .solution-number p {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  #section3 .solution-head img {
+    width: 60px;
+  }
+  #section3 .solution-head h2 {
+    font-size: 33px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section3 .technical-number {
+    min-height: 95px;
+  }
+  #section3 .technical-number h3 {
+    margin-right: 10px;
+  }
+  #section3 .technical-number p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  #section3 .solution-area {
+    padding: 100px 115px 175px 110px;
+    height: 690px;
+    right: -115px;
+    top: 120px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section3 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  #section3 .container-fluid {
+    height: auto !important;
+  }
+  #section3 .row {
+    height: auto !important;
+  }
+  #section3 .header .left .logo {
+    margin-top: -15px;
+  }
+  #section3 .technical-area {
+    margin-top: 0;
+    height: auto;
+  }
+  #section3 .technical-area h2 {
+    font-size: 28px !important;
+  }
+  #section3 .technical-number {
+    min-height: auto;
+  }
+  #section3 .solution-area {
+    position: relative;
+    right: 0;
+    top: auto;
+    height: auto;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 35px;
+  }
+  #section3 .solution-area .solution-head img {
+    width: 55px;
+  }
+  #section3 .solution-area .solution-head h2 {
+    font-size: 30px;
+  }
+  #section3 .solution-number h3 {
+    margin-right: 15px;
+  }
+  #section3 .solution-number p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+/*-------section4--------*/
+#section4 {
+  position: relative;
+  background-image: url(../images/healthcare-cs2/section3-bg.png);
+  background-repeat: no-repeat;
+  background-position: 40% 110px;
+  background-size: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section4:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section4 .fp-tableCell {
+  height: auto !important;
+}
+
+#section4 .techno-area {
+  margin-top: 60px;
+}
+
+#section4 .techno-top {
+  padding: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px dotted #696696;
+}
+
+#section4 .techno-top h2 {
+  font-size: 40px;
+  line-height: 45px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'proxima_nova_altsemibold';
+}
+
+#section4 .techno-top p {
+  font-size: 22px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#section4 .techno-bottom h3 {
+  font-size: 30px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  font-family: 'proxima_nova_altsemibold';
+}
+
+#section4 .techno-bottom ul {
+  margin-bottom: 0;
+  counter-reset: mynum;
+}
+
+#section4 .techno-bottom ul li {
+  font-size: 21px;
+  color: #000;
+  border-bottom: 1px solid #376bfb;
+  padding: 13px 10px 13px 70px;
+  position: relative;
+  line-height: 26px;
+  counter-increment: mynum;
+}
+
+#section4 .techno-bottom ul li:before {
+  position: absolute;
+  content: "0" counter(mynum);
+  font-size: 22px;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  background: #376bfb;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 39px;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: 'Bebas';
+}
+
+#section4 .techno-bottom ul li:last-child {
+  border-bottom: 0;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section4 .techno-top {
+    padding: 20px 20px 15px 20px;
+    margin-bottom: 15px;
+  }
+  #section4 .techno-top h2 {
+    font-size: 37px;
+    margin-bottom: 5px;
+  }
+  #section4 .techno-top p {
+    font-size: 20px;
+  }
+  #section4 .techno-bottom h3 {
+    margin-bottom: 5px;
+  }
+  #section4 .techno-bottom ul li {
+    font-size: 22px;
+    padding: 10px 10px 10px 70px;
+  }
+  #section4 .techno-bottom ul li:before {
+    font-size: 21px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section4 .techno-top {
+    padding: 25px 20px 15px 20px;
+  }
+  #section4 .techno-top h2 {
+    font-size: 32px !important;
+  }
+  #section4 .techno-bottom ul li {
+    font-size: 21px;
+    padding: 10px 10px 10px 65px;
+  }
+  #section4 .techno-bottom ul li:before {
+    font-size: 19px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+  #section4 .techno-bottom h3 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section4 .header .left {
+    padding-left: 15px;
+  }
+  #section4 .header .left .logo {
+    margin-top: -7px;
+  }
+  #section4 .techno-area {
+    margin-top: 0px;
+  }
+  #section4 .techno-top {
+    padding: 15px 10px 15px 10px;
+  }
+  #section4 .techno-top h2 {
+    font-size: 26px !important;
+    margin-bottom: 5px;
+  }
+  #section4 .techno-top p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  #section4 .techno-bottom h3 {
+    font-size: 26px !important;
+    padding: 0 10px;
+  }
+  #section4 .techno-bottom ul li {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 5px 10px 50px;
+  }
+  #section4 .techno-bottom ul li:before {
+    left: 10px;
+  }
+}
+
+/*-------section5--------*/
+#section5 {
+  position: relative;
+  background-image: url(../images/healthcare-cs2/section3-bg.png);
+  background-repeat: no-repeat;
+  background-position: 85% 110px;
+  background-size: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section5:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section5 .fp-tableCell {
+  height: auto !important;
+}
+
+#section5 .highlight-title {
+  padding: 0 0 20px 0px;
+  margin-top: 70px;
+}
+
+#section5 .highlight-title h2 {
+  font-size: 36px;
+  color: #000;
+  font-family: 'proxima_nova_altsemibold';
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#section5 .highlight1 {
+  border: 1px solid #376bfb;
+  border-radius: 10px;
+  padding: 30px 25px 30px 25px;
+  margin-bottom: 15px;
+  min-height: 275px;
+}
+
+#section5 .highlight1 h3 {
+  font-size: 26px;
+  color: #376bfb;
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-family: 'proxima_nova_altsemibold';
+}
+
+#section5 .highlight1 p {
+  font-size: 21px;
+  color: #000;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section5 .highlight-title h2 {
+    font-size: 30px;
+  }
+  #section5 .highlight1 {
+    padding: 15px;
+    min-height: 215px;
+  }
+  #section5 .highlight1 h3 {
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+  #section5 .highlight1 p {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section5 .header .left {
+    padding-left: 15px;
+  }
+  #section5 .header .left .logo {
+    margin-top: -7px;
+  }
+  #section5 .highlight-title {
+    margin-top: 0;
+    padding-left: 0;
+  }
+  #section5 .highlight-title h2 {
+    font-size: 26px;
+  }
+  #section5 .highlight1 {
+    min-height: auto;
+    padding: 20px;
+  }
+}
+
+/*-------section6--------*/
+#section6 {
+  position: relative;
+  background-image: url(../images/healthcare-cs2/section6-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section6:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section6 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section6 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section6 .container-fluid {
+  height: 100% !important;
+}
+
+#section6 .row {
+  height: 100% !important;
+}
+
+#section6 .architec-img {
+  text-align: center;
+  height: 100%;
+}
+
+#section6 .architec-img img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+}
+
+@media (max-width: 767px) {
+  #section6 .header .title {
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.3;
+  }
+  #section6 .header .left {
+    padding-left: 0px;
+    margin-top: -8px;
+  }
+  #section6 .header .left .logo {
+    margin-top: -7px;
+  }
+  #section6 .architec-img img {
+    width: 100%;
+  }
+}
+
+/*-------section7--------*/
+#section7 {
+  position: relative;
+  background-image: url(../images/healthcare-cs2/section7-bg.png);
+  background-repeat: no-repeat;
+  background-position: 95% 110px;
+  background-size: 32%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section7:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section7 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section7 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section7 .main-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+#section7 .comp1 {
+  border: 1px solid #b1c5fd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 30px;
+  min-height: 235px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#section7 .comp1 img {
+  width: 85px;
+  height: 85px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 20px;
+}
+
+#section7 .comp1 p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #303032;
+  margin-bottom: 0;
+}
+
+#section7 .bulb-img img {
+  width: 85px;
+  height: 85px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section7 .comp1 {
+    padding: 15px;
+  }
+  #section7 .comp1 img {
+    width: 110px;
+    height: 130px;
+    margin-bottom: 10px;
+  }
+  #section7 .comp1 p {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  #section7 .header .title {
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.3;
+  }
+  #section7 .header .left {
+    padding-left: 0px;
+    margin-top: -8px;
+  }
+  #section7 .header .left .logo {
+    margin-top: 0px;
+    padding-left: 5px;
+  }
+  #section7 .main-row {
+    margin-top: 15px;
+  }
+  #section7 .comp1 {
+    padding: 25px;
+  }
+  #section7 .comp1 img {
+    height: auto;
+  }
+}
+
+/*-------section8--------*/
+#section8 {
+  position: relative;
+  background-image: url(../images/healthcare-cs2/section7-bg.png);
+  background-repeat: no-repeat;
+  background-position: 95% 110px;
+  background-size: 32%;
+  padding: 0;
+}
+
+#section8:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section8 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section8 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section8 .architec-img {
+  text-align: center;
+  height: 100%;
+}
+
+#section8 .architec-img img {
+  width: 93%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section8 .architec-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section8 .architec-img img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section8 .architec-img img {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section8 .header .title {
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.3;
+  }
+  #section8 .header .left {
+    padding-left: 0px;
+    margin-top: -8px;
+  }
+  #section8 .header .left .logo {
+    margin-top: 0px;
+    padding-left: 5px;
+  }
+  #section8 .architec-img {
+    height: auto;
+  }
+  #section8 .architec-img img {
+    width: 100%;
+  }
+}
+
+/*-------section9--------*/
+#section9 {
+  position: relative;
+}
+
+#section9:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section9 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section9 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section9 .container-fluid {
+  height: 100%;
+}
+
+#section9 .row {
+  height: 100%;
+}
+
+#section9 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section9 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section9 .screen-img img {
+    width: 83%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section9 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section9 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section9 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section10--------*/
+#section10 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section10:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section10 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section10 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section10 .container-fluid {
+  height: 100%;
+}
+
+#section10 .row {
+  height: 100%;
+}
+
+#section10 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section10 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section10 .screen-img img {
+    width: 83%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section10 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section10 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section10 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section11--------*/
+#section11 {
+  position: relative;
+}
+
+#section11:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section11 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section11 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section11 .container-fluid {
+  height: 100%;
+}
+
+#section11 .row {
+  height: 100%;
+}
+
+#section11 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section11 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section11 .screen-img img {
+    width: 83%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section11 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section11 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section11 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section12--------*/
+#section12 {
+  position: relative;
+}
+
+#section12:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section12 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section12 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section12 .container-fluid {
+  height: 100%;
+}
+
+#section12 .row {
+  height: 100%;
+}
+
+#section12 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section12 .screen-img img {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section12 .screen-img img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section12 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section12 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section12 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section13--------*/
+#section13 {
+  position: relative;
+}
+
+#section13:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section13 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section13 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section13 .container-fluid {
+  height: 100%;
+}
+
+#section13 .row {
+  height: 100%;
+}
+
+#section13 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section13 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section13 .screen-img img {
+    width: 83%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section13 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section13 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section13 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section14--------*/
+#section14 {
+  position: relative;
+}
+
+#section14:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section14 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section14 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section14 .container-fluid {
+  height: 100%;
+}
+
+#section14 .row {
+  height: 100%;
+}
+
+#section14 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section14 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section14 .screen-img img {
+    width: 83%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section14 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section14 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section14 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section15--------*/
+#section15 {
+  position: relative;
+}
+
+#section15:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section15 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section15 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section15 .container-fluid {
+  height: 100%;
+}
+
+#section15 .row {
+  height: 100%;
+}
+
+#section15 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section15 .screen-img img {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section15 .screen-img img {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section15 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section15 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section15 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section16--------*/
+#section16 {
+  position: relative;
+}
+
+#section16:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section16 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section16 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section16 .container-fluid {
+  height: 100%;
+}
+
+#section16 .row {
+  height: 100%;
+}
+
+#section16 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section16 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section16 .screen-img img {
+    width: 83%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section16 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section16 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section16 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section17--------*/
+#section17 {
+  position: relative;
+}
+
+#section17:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section17 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section17 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section17 .container-fluid {
+  height: 100%;
+}
+
+#section17 .row {
+  height: 100%;
+}
+
+#section17 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section17 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section17 .screen-img img {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section17 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section17 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section17 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section18--------*/
+#section18 {
+  position: relative;
+}
+
+#section18:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section18 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section18 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section18 .container-fluid {
+  height: 100%;
+}
+
+#section18 .row {
+  height: 100%;
+}
+
+#section18 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section18 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section18 .screen-img img {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section18 .screen-img img {
+    width: 86%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section18 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section18 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section19--------*/
+#section19 {
+  position: relative;
+}
+
+#section19:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section19 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section19 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section19 .container-fluid {
+  height: 100%;
+}
+
+#section19 .row {
+  height: 100%;
+}
+
+#section19 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section19 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section19 .screen-img img {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section19 .screen-img img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section19 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section19 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section20--------*/
+#section20 {
+  position: relative;
+}
+
+#section20:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section20 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section20 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section20 .container-fluid {
+  height: 100%;
+}
+
+#section20 .row {
+  height: 100%;
+}
+
+#section20 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section20 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section20 .screen-img img {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section20 .screen-img img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section20 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section20 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section21--------*/
+#section21 {
+  position: relative;
+}
+
+#section21:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section21 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section21 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section21 .container-fluid {
+  height: 100%;
+}
+
+#section21 .row {
+  height: 100%;
+}
+
+#section21 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section21 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section21 .screen-img img {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section21 .screen-img img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section21 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section21 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section22--------*/
+#section22 {
+  position: relative;
+}
+
+#section22:before {
+  position: absolute;
+  content: '';
+  width: 400px;
+  height: 175px;
+  background-image: url(../images/healthcare-cs2/shape1.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  background-position: right bottom;
+}
+
+#section22 .header .title {
+  font-size: 33px;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left: 2px solid #b1c5fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1;
+  margin-top: -5px;
+}
+
+@media only screen and (max-width: 1366px) {
+  #section22 .header .left {
+    margin-top: -10px;
+  }
+}
+
+#section22 .container-fluid {
+  height: 100%;
+}
+
+#section22 .row {
+  height: 100%;
+}
+
+#section22 .screen-img img {
+  width: 93%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1600px) {
+  #section22 .screen-img img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #section22 .screen-img img {
+    width: 82%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #section22 .screen-img img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #section22 .screen-img {
+    text-align: center;
+    margin-top: 25px;
+  }
+  #section22 .screen-img img {
+    position: relative;
+    width: 95%;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+/*-------section23--------*/
+#section23 {
+  position: relative;
+  background-image: url(../images/fleet/contact-bg1.svg), url(../images/fleet/contact-bg2.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: 40%, 40%;
+  margin: 0;
+}
+
+#section23 .thanks {
+  width: 80%;
+  padding: 25px 0;
+  margin: 0 auto;
+  font-size: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'renogareregular';
+  border-bottom: 4px solid red;
+}
+
+@media (max-width: 991px) {
+  #section23 .thanks {
+    width: 95%;
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  #section23 .thanks {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  #section23 .thanks {
+    font-size: 40px;
+  }
+}
+
+#section23 .welcome-bottom-links {
+  margin: 50px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  #section23 .welcome-bottom-links {
+    margin: 30px 0;
+  }
+}
+
+#section23 .welcome-bottom-links .bt-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#section23 .welcome-bottom-links .bt-links .lists {
+  margin: 10px;
+}
+
+@media (max-width: 767px) {
+  #section23 .welcome-bottom-links .bt-links .lists {
+    margin: 0 0 12px 0;
+  }
+}
+
+#section23 .welcome-bottom-links .bt-links .lists p.border-line {
+  border-right: 1px solid #707070;
+  padding-right: 40px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+@media (max-width: 991px) {
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line {
+    font-size: 20px;
+    border-right: 0PX;
+  }
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line .bor-none {
+    border: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line {
+    border: none;
+    margin-bottom: 0;
+  }
+}
+
+#section23 .welcome-bottom-links .bt-links .lists p.border-line img {
+  margin-top: 0px;
+}
+
+@media (max-width: 991px) {
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line .web {
+    width: 10%;
+  }
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line .mail {
+    width: 10%;
+  }
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line .tel {
+    width: 12%;
+  }
+}
+
+@media (max-width: 767px) {
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line .web {
+    width: 9%;
+  }
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line .mail {
+    width: 9%;
+  }
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line .tel {
+    width: 13%;
+  }
+}
+
+#section23 .welcome-bottom-links .bt-links .lists p.border-line span {
+  padding-left: 10px;
+}
+
+@media (max-width: 767px) {
+  #section23 .welcome-bottom-links .bt-links .lists p.border-line span {
+    padding-left: 5px;
+  }
+}
+
+#section23 .welcome-bottom-links .bt-links .lists p.border-line span a {
+  color: #333;
+}
+
+#section23 .welcome-bottom-links .bt-links .lists p.border-line span a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+#section23 .welcome-bottom-links .bt-links .lists .b-none {
+  border-right: none !important;
+}
+
+#section23 .footer-logo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#section23 .footer-logo img {
+  width: 220px;
+}
+
+@media (max-width: 991px) {
+  .fp-tableCell {
+    height: auto !important;
+  }
+}
+
+#section2, #section4, #section5, #section7 {
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  #section2, #section4, #section5, #section7 {
+    height: auto !important;
+    padding: 110px 20px 70px 20px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #section2, #section4, #section5, #section7 {
+    padding: 30px 0px !important;
+  }
+}
+
+@media (max-width: 567px) {
+  #section2 .container-fluid, #section4 .container-fluid, #section5 .container-fluid, #section7 .container-fluid {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #section3, #section4 {
+    height: auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #section7, #section8 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #section23 {
+    height: auto !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #section6, #section9, #section10, #section11, #section12, #section13, #section14, #section15, #section16, #section17, #section18, #section19, #section20, #section21, #section22 {
+    height: auto !important;
+    padding: 30px 0 0 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #section8 {
+    height: auto !important;
+    padding: 30px 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .m-sm-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  html {
+    overflow-x: hidden !important;
+  }
+  .p-sm-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+/*# sourceMappingURL=fleet-management.css.map */

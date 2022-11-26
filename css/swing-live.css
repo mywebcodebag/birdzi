@@ -1,0 +1,105 @@
+body {
+  font-family: 'barlowlight';
+  color: #383838;
+  font-size: 40px;
+  color: #333; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.h100 {
+  height: 100%; }
+
+.relative {
+  position: relative; }
+
+.full-height {
+  width: 100%;
+  height: 100vh; }
+
+#fp-nav ul li .fp-tooltip {
+  color: #ccc; }
+
+#fp-nav ul li a span {
+  background: #ddd; }
+
+.btm-border {
+  background: linear-gradient(to right, #d6213f 40%, #a33482 60%);
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+  @media (max-width: 1024px) {
+    .btm-border {
+      display: none; } }
+  @media (max-width: 767px) {
+    .btm-border {
+      display: none; } }
+  @media (max-width: 576px) {
+    .btm-border {
+      display: none; } }
+
+@media (max-width: 991px) {
+  .section {
+    border-bottom: 2px solid #ccc; } }
+.section:last-child {
+  border-bottom: none; }
+
+/*-------section1--------*/
+#section1 {
+  color: #fff;
+  background: url(../images/swing-live/slide-one-bg.jpg) no-repeat right bottom #ec2127; }
+  #section1 .container-fluid {
+    padding: 0; }
+  #section1 .swing-live {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #section1 .swing-live .left-1 span {
+      padding: 120px 50px;
+      background: #fff;
+      color: #999;
+      width: 90%;
+      display: block;
+      border-radius: 0 200px 200px 0; }
+      #section1 .swing-live .left-1 span img {
+        max-width: 100%; }
+    #section1 .swing-live .right-1 span {
+      font-size: 25px;
+      margin-bottom: 20px;
+      display: block; }
+    #section1 .swing-live .right-1 img {
+      max-width: 100%; }
+
+/*-------section2--------*/
+#section2 {
+  position: relative; }
+  #section2 .header .left {
+    text-align: left; }
+  #section2 .header .right {
+    text-align: right; }
+    #section2 .header .right img {
+      max-width: 27%; }
+
+/*-------section3--------*/
+/*-------section4--------*/
+/*-------section5--------*/
+/*-------section6--------*/
+/*-------section7--------*/
+/*-------section8--------*/
+/*-------section9--------*/
+/*-------section10--------*/
+/*-------section11--------*/
+/*-------section12--------*/
+/*-------section13--------*/
+/*-------section14--------*/
+/*-------section15--------*/
+/*-------section16--------*/
+/*-------section17--------*/
+@media (max-width: 991px) {
+  .fp-tableCell {
+    height: auto !important; } }
+
+/*# sourceMappingURL=swing-live.css.map */

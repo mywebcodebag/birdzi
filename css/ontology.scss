@@ -1,0 +1,670 @@
+@import "mixins";
+
+body{
+	font-family: 'proxima_nova_altlight';
+  	color:$primary-color;
+	font-size: 40px;
+	color: #333;
+}
+
+ul,li{
+	@include nospace();
+	list-style:none;
+}
+
+//.container-fluid{padding:0;}
+.h100 {height: 100%;}
+.relative {position: relative;}
+.full-height{
+	width:100%;
+	height: 100vh;
+}
+
+
+#fp-nav ul li .fp-tooltip{ color: #ccc;}
+#fp-nav ul li a span{ background: #ddd;}
+.btm-border{
+	@include gradiant();
+	height:10px;
+	width:100%;
+	position: absolute;
+    bottom: 0;
+	@media (max-width: 1024px) {display: none;}
+    @media (max-width: 767px) {display: none;}
+    @media (max-width: 576px) {display: none;}
+}
+
+
+.section { padding: 0 50px;
+	@media (max-width: 991px) {
+		border-bottom: 2px solid #ccc;
+	}
+	&:last-child {border-bottom: none;}
+	
+	.header { position: absolute; top: 20px; left: 0; padding: 0 50px; display: block; 
+		@media (max-width: 567px) {position: inherit; padding:  0 20px;}
+		.left {text-align: left;display: flex; align-items: center;
+			.logo { border-right: 1px solid #d1d1d1; display: inline-block; padding-right: 15px; width:17%;
+				
+				@media (max-width: 991px) {width: 35%;}
+				 
+				@media (max-width: 767px) {display: inline-block; justify-content: center;align-items: center; }
+				
+				img { max-width: 100%;
+				@media (max-width: 767px) {margin-top: 0px;}
+				}
+			}
+			.title {display: inline-block; font-size: 30px;
+    font-family: 'proxima_nova_altsemibold'; padding-left: 15px;   color: #303033; 
+				@media (max-width: 991px) {font-size: 18px;	}
+				@media (max-width: 767px) {font-size: 15px;	}
+				@media (max-width: 567px) {font-size: 12px;	}
+			}
+		}
+		.right {text-align: right; position: relative;
+			@media (max-width: 767px) {
+				text-align: center;	
+				}
+			img {max-width: 70%; margin-right: -55px; margin-top: 0px;
+				
+				@media (min-width: 1600px) { 
+				 max-width: 60%;
+				}
+				
+				@media (max-width: 991px) { position: absolute;
+				 top: 5px; right: -50px; margin-right: inherit; margin-top: inherit; max-width: 92%;
+				}
+				
+				@media (max-width: 768px) { position: absolute;
+				 top: 0px; right: -34px; margin-right: inherit; margin-top: inherit; max-width: 140%;
+				}
+				
+			@media (max-width: 576px) { position: absolute;
+				 top: 0px; right: -10px; margin-right: inherit; margin-top: inherit; max-width: 140%;
+				}
+				
+			}
+			@media(min-width: 992px){
+			.black {display: none;}
+		}
+		@media(max-width: 991px){
+			.white {display: none;}
+		}
+		}
+	}
+}
+
+
+/*-------section1--------*/
+#section1 { 
+	position: relative;
+	background-image: url(../images/ontology/contact-bg1.svg), url(../images/ontology/contact-bg2.svg) ;
+	background-position: left top, right bottom;
+	background-repeat: no-repeat;
+	background-size: 40%, 40%;
+	background-color: #f3f6f8;
+	margin: 0;
+	
+	@media (max-width: 991px) {padding: 50px 0; height: auto !important;}
+	
+	.copyright {position: absolute; left: 0; bottom: 15px; font-size: 14px; font-weight: bold; display: block; text-align: center;}
+	
+	
+	
+	.swing-live {display: flex;justify-content: center;align-items: center;
+		.left-1 { background: #fff;  padding: 74px 0px; border-right: 1px solid #f2f5f7; border-radius: 60px 0 0 60px; box-shadow: 0px 0px 20px #dddddd;
+			@media (max-width: 767px) {
+				padding: 35px; border-radius: 40px 40px 0 0; border-bottom: 3px solid #f2f5f7;
+			}
+			span { text-align: center; display: block;
+				@media (max-width: 991px) { 
+				border-radius: 0 70px 70px 0;;
+				}
+				img {max-width: 48%;
+				
+					
+				}
+				
+			}
+		}
+		.right-1 { background: #fff;  padding: 66px 50px; border-radius: 0 60px  60px 0; box-shadow: 10px 0px 20px #dddddd;
+			
+			@media (max-width: 1500px) {
+				padding: 65px 50px;
+			}
+			
+			
+			
+			@media (max-width: 767px) {
+				padding: 35px; border-radius: 0 0 40px 40px; box-shadow: 10px 10px 20px #dddddd;
+			}
+			
+			span {font-size: 17px; display: block; color: #000; font-weight: bold; 
+			display: flex;
+    justify-content: center;
+    align-items: center;
+			
+				@media (max-width: 767px) {
+		padding-left: 0px; text-align: center;
+	}
+				img {max-width: 52%; display: block; margin-top: 10px; margin-bottom: 10px;
+					
+					@media (max-width: 767px) {
+						max-width: 50%; margin:10px auto; 
+					}
+			}
+				
+			}
+			
+			
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.row {margin: 0 15px;}
+	}
+		
+}
+
+
+
+/*-------section2--------*/
+#section2 { position: relative; 
+	
+	background-image: url(../images/ontology/ontology-2-bg.png), url(../images/ontology/strip.png);
+	background-position: 90% center, 0% center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 25%, 14px;
+	margin: 0;
+	
+	@media(max-width: 991px){ background: none;}
+	
+	.header {.logo {border: none;}}
+	.container-fluid {
+		@media(max-width: 991px){ padding: 0;}
+	}
+	.left-3 { 
+		h2 {padding: 20px 0 10px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold';
+		
+		@media(max-width: 991px){margin-top: 30px;}
+		
+		}
+		p {display: block; font-size: 20px;
+    line-height: 30px; padding-right: 40px;
+		@media(max-width: 767px){font-size: 18px;line-height: 27px; padding-right: 10px;}
+
+		
+		}
+	}
+	.right-3 { padding-left: 80px;
+		@media(max-width: 991px){ padding-left: 20px; padding-bottom: 20px; background: #2767b1;}
+		
+		h2 {padding: 20px 0 10px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold'; color: #fff; width: 100%}
+		ul.points {display: block; width: 100%;
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 12px 0 0 20px; background: url(../images/ontology/bullet3.svg) no-repeat 0px 25px; margin-bottom: 10px; color: #fff;
+				
+				@media(max-width: 767px){font-size: 14px;line-height: 23px;}
+	}
+		}
+	}
+	
+}
+
+
+/*-------section3--------*/
+#section3 { position: relative; 
+background-image: url(../images/ontology/logo-icon.png), url(../images/ontology/strip.png);
+	background-position: 90% center, 0% center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 45%, 14px;
+	margin: 0;
+	
+	
+	@media(max-width: 991px){ background: none;}
+	
+	.header {.logo {border: none;}}
+	.container-fluid {
+		@media(max-width: 991px){ padding: 0;}
+	}
+	.left-3 { 
+		h2 {padding: 20px 0 10px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold';
+		
+		@media(max-width: 991px){margin-top: 30px;}
+		
+		}
+		p {display: block; font-size: 20px;
+    line-height: 30px; padding-right: 40px;
+		@media(max-width: 767px){font-size: 18px;line-height: 27px; padding-right: 10px;}
+
+		
+		}
+	}
+	.right-3 { padding-left: 80px;
+		@media(max-width: 991px){ padding-left: 20px; padding-bottom: 20px; background: #2767b1;}
+		
+		h2 {padding: 20px 0 10px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold'; color: #fff; width: 100%}
+		ul.points {display: block; width: 100%;
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 12px 0 0 20px; background: url(../images/ontology/bullet3.svg) no-repeat 0px 25px; margin-bottom: 10px; color: #fff;
+				
+				@media(max-width: 767px){font-size: 14px;line-height: 23px;}
+	}
+		}
+	}
+	
+}
+
+
+
+
+/*-------section4--------*/
+#section4 { position: relative; 
+	
+	.support { margin-top: 6%; display: flex;
+		@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				margin-top: 4%;
+			}
+		@media(max-width: 991px){margin-top: 20px; }
+		
+	.box { 
+		margin: 20px 0;
+		h2 {padding: 0; border-bottom: 1px solid #ccc; margin: 0;
+    display: block; padding: 15px 30px;
+    font-size: 30px; color: #0065c3;
+    font-family: 'proxima_nova_altsemibold';}
+		ul {padding: 30px;
+			@media(max-width: 767px){padding: 0; }
+		li { position: relative; border-radius: 20px; box-shadow: 0px 0px 12px #e2e2e2;width: 100%; 
+		font-size: 20px; line-height: 27px; list-style: none; padding: 0px 15px 0px 40px; color: #4a4b4d; margin-bottom: 35px;
+			
+			background: url(../images/ontology/strip.png) no-repeat 0px center;
+			background-size: 10px 100% ;
+			
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				font-size: 18px;
+			}
+			
+			strong { font-family: 'proxima_nova_altbold'; color: #303033;width: 100%;}
+			p {width: 100%; margin:0; border-left: 0px solid #e4e4e5; padding: 30px 20px 30px 0px; min-height: 85px; display: flex; align-items: center;}
+		@media(max-width: 991px){font-size: 14px;  }
+			span {position: absolute; color: #e4e4e5;     
+				font-family: 'proxima_nova_altbold'; font-size: 70px; left: 20px; top: 32px; text-align: center; }
+			&:last-child {margin-bottom: 0;}
+	}
+	}
+		
+	}	
+	}
+	
+}
+
+
+/*-------section5--------*/
+#section5 { position: relative; 
+	
+	.support { margin-top: 8%;
+		
+		.df {display: flex;}
+		
+	.box { background: #fff; border-radius: 20px; box-shadow: 0px 0px 12px #e2e2e2;width: 100%;
+		margin-bottom: 20px;
+		h2 {padding: 0;
+    display: block; padding: 30px 30px 15px 30px; margin: 0;
+    font-size: 22px; color: #000;
+    font-family: 'proxima_nova_altsemibold';
+			@media only screen and (min-width: 1401px) and (max-width: 1700px) {
+				padding: 40px 30px 10px 30px;
+			}
+		
+		}
+		ul {padding: 0px 30px 30px 30px;
+			@media only screen and (min-width: 1401px) and (max-width: 1700px) {
+				padding: 10px 30px 40px 30px;
+			}
+		li {
+		font-size: 16px; line-height: 20px; list-style: none; padding: 5px 0 5px 15px; background: url(../images/ontology/bullet2.svg) no-repeat 0px 11px; color: #000;
+		@media(max-width: 991px){font-size: 14px; }
+	}
+	}
+		
+	}	
+	}
+	
+}
+
+
+/*-------section6--------*/
+#section6 { position: relative; 
+	
+	.support { margin-top: 8%;
+		
+		.df {display: flex;}
+		
+	.box { background: #fff; border-radius: 20px; box-shadow: 0px 0px 12px #e2e2e2;width: 100%;
+		margin-bottom: 20px;
+		h2 {padding: 0;
+    display: block; padding: 30px 30px 15px 30px; margin: 0;
+    font-size: 22px; color: #000;
+    font-family: 'proxima_nova_altsemibold';
+			@media only screen and (min-width: 1401px) and (max-width: 1700px) {
+				padding: 40px 30px 10px 30px;
+			}
+		
+		}
+		ul {padding: 0px 30px 30px 30px;
+			@media only screen and (min-width: 1401px) and (max-width: 1700px) {
+				padding: 10px 30px 40px 30px;
+			}
+		li {
+		font-size: 16px; line-height: 20px; list-style: none; padding: 5px 0 5px 15px; background: url(../images/ontology/bullet2.svg) no-repeat 0px 11px; color: #000;
+		@media(max-width: 991px){font-size: 14px; }
+	}
+	}
+		
+	}	
+	}
+	
+}
+
+
+/*-------section7--------*/
+#section7 { position: relative; 
+	background-image: url(../images/ontology/logo-icon.png);
+	background-position: 90% center;
+	background-repeat: no-repeat;
+	background-size: 45%;
+	margin: 0;
+	
+	@media(max-width: 991px){
+		background: none;
+	}
+	
+	ul.points {
+		@media(max-width: 991px){ margin-top: 30px; }
+		li {
+		font-size: 22px; line-height: 26px; list-style: none; padding: 2px 0 0 36px; background: url(../images/ontology/bullet.svg) no-repeat 0px 12px; margin-bottom: 10px;
+			@media(max-width: 991px){ font-size: 18px; margin-top: 18px; }
+	}
+	}
+	
+}
+
+/*-------section8--------*/
+#section8 { position: relative; overflow:hidden;
+	
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 0px; left: 50%; width: 145%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px; margin-top: 40px;
+		}
+			
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 130%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 148%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 132%;
+			}
+	} 
+	}
+		
+}
+
+
+
+
+
+
+/*-------section9--------*/
+#section9 { position: relative; overflow:hidden;
+	
+	.header .left .title {
+		
+		p {margin-bottom: 0px; font-size: 18px; color: #444;}
+	}
+	
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 35px; left: 50%; width: 90%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px; margin-top: 40px;
+		}
+			
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 85%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 98%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 90%;
+			}
+	} 
+	}
+		
+}
+
+
+
+/*-------section10--------*/
+#section10 { position: relative;
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 0px; left: 50%; width: 80%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px;margin-top: 40px;
+		}
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 75%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 85%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 76%;
+			}
+	}
+	}
+}
+
+/*-------section11--------*/
+#section11 { position: relative;
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 0px; left: 50%; width: 80%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px;margin-top: 40px;
+		}
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 75%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 85%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 76%;
+			}
+	}
+	}
+}
+
+/*-------section12--------*/
+#section12 { position: relative;
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 0px; left: 50%; width: 80%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px;margin-top: 40px;
+		}
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 75%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 85%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 76%;
+			}
+	}
+	}
+}
+
+
+/*-------section13--------*/
+#section13 { position: relative;
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 0px; left: 50%; width: 80%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px;margin-top: 40px;
+		}
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 75%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 85%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 76%;
+			}
+	}
+	}
+}
+
+
+
+
+/*-------section14--------*/
+#section14 {position: relative;
+	background-image: url(../images/ontology/contact-bg1.svg), url(../images/ontology/contact-bg2.svg) ;
+	background-position: left top, right bottom;
+	background-repeat: no-repeat;
+	background-size: 40%, 40%;
+	margin: 0;
+	
+	.thanks { width: 80%; padding: 25px 0; margin: 0 auto; font-size: 100px; text-align: center; text-transform: uppercase;
+		font-family: 'renogareregular'; border-bottom: 4px solid red;
+		
+		@media(max-width: 991px){  width: 95%; font-size: 80px;}
+@media(max-width: 767px){ font-size: 60px;}
+		@media(max-width: 576px){ font-size: 40px;}
+
+
+	}
+	
+	.welcome-bottom-links{margin: 50px 0;
+		
+		.bt-links {display: flex;flex-wrap: wrap;align-items: center;justify-content: center;
+			.lists{margin: 10px;
+				p.border-line{border-right: 1px solid #707070; padding-right: 40px;padding-left: 20px;font-size: 25px;
+					
+					@media(max-width: 991px){  font-size: 20px;
+						border-right:0PX;
+						.bor-none {border: none;}
+					}
+						@media(max-width: 767px){ font-size: 17px;}
+					@media(max-width: 576px){ border: none;}
+					
+					
+					img {margin-top: -7px;}
+					@media(max-width: 991px){  
+						.web { width: 10%;}
+						.mail {width: 10%;}
+						.tel {width: 12%;}
+						}
+						@media(max-width: 767px){
+						.web { width: 9%;}
+						.mail {width: 9%;}
+						.tel {width: 13%;}
+						}
+				span{ padding-left: 10px;
+				a {color: #333;
+					&:hover {color: #000; text-decoration: none;}
+				}
+				}
+			
+			}
+				.b-none {border-right: none!important;}
+		}
+}
+}
+	.footer-logo {margin: 0 auto; text-align: center;
+		img {width: 220px;}
+	}
+	
+}
+
+
+
+
+.fp-tableCell {
+	@media(max-width: 991px){
+			height: auto!important;
+		}
+}
+
+
+
+ #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14, #section15, #section16, #section17, #section18, #section19, #section20 {
+	font-size: 20px;
+	
+	@media (max-width: 991px){ 
+		height: auto !important;
+		padding:30px 20px!important;
+		h2 {font-size: 25px!important;}
+    }
+	 
+	 @media (max-width: 768px){ 
+		h2 {font-size: 20px!important;}
+    }
+	
+	@media (max-width: 567px){ 
+		.container-fluid {padding: 0;}
+    }
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

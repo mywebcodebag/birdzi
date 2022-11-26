@@ -1,0 +1,571 @@
+@import "mixins";
+
+body{
+	font-family: 'proxima_nova_altlight';
+  	color:$primary-color;
+	font-size: 40px;
+	color: #000;
+}
+
+ul,li{
+	@include nospace();
+	list-style:none;
+}
+
+
+//.container-fluid{padding:0;}
+.h100 {height: 100%;}
+.relative {position: relative;}
+.full-height{
+	width:100%;
+	height: 100vh;
+}
+
+
+#fp-nav ul li .fp-tooltip{ color: #ccc;}
+#fp-nav ul li a span{ background: #ddd;}
+.btm-border{
+	@include gradiant();
+	height:10px;
+	width:100%;
+	position: absolute;
+    bottom: 0;
+	@media (max-width: 1024px) {display: none;}
+    @media (max-width: 767px) {display: none;}
+    @media (max-width: 576px) {display: none;}
+}
+
+
+.section { padding: 0 50px;
+	@media (max-width: 991px) {
+		border-bottom: 2px solid #ccc;
+	}
+	&:last-child {border-bottom: none;}
+	
+	.header { position: absolute; top: 20px; left: 0; padding: 0 50px; display: block; 
+		@media (max-width: 567px) {position: inherit; padding:  0 20px;}
+		.left {text-align: left;display: flex; align-items: center;
+			.logo { border-right: 1px solid #d1d1d1; display: inline-block; padding-right: 15px; width:180px;
+				
+				@media (max-width: 991px) {width: 35%;}
+				 
+				@media (max-width: 767px) {display: inline-block; justify-content: center;align-items: center; }
+				
+				img { max-width: 100%;
+				@media (max-width: 767px) {margin-top: 0px;}
+				}
+			}
+			.title {display: inline-block; font-size: 30px;
+    font-family: 'proxima_nova_altsemibold'; padding-left: 15px;   color: #303033; 
+				@media (max-width: 991px) {font-size: 18px;	}
+				@media (max-width: 767px) {font-size: 15px;	}
+				@media (max-width: 567px) {font-size: 12px;	}
+			}
+		}
+		.right {text-align: right; position: relative;
+			@media (max-width: 767px) {
+				text-align: center;	
+				}
+			img {max-width: 70%; margin-right: -55px; margin-top: 0px;
+				
+				@media (min-width: 1600px) { 
+				 max-width: 60%;
+				}
+				
+				@media (max-width: 991px) { position: absolute;
+				 top: 5px; right: -50px; margin-right: inherit; margin-top: inherit; max-width: 92%;
+				}
+				
+				@media (max-width: 768px) { position: absolute;
+				 top: 0px; right: -34px; margin-right: inherit; margin-top: inherit; max-width: 140%;
+				}
+				
+			@media (max-width: 576px) { position: absolute;
+				 top: 0px; right: -10px; margin-right: inherit; margin-top: inherit; max-width: 140%;
+				}
+				
+			}
+			@media(min-width: 992px){
+			.black {display: none;}
+		}
+		@media(max-width: 991px){
+			.white {display: none;}
+		}
+		}
+	}
+}
+
+
+/*-------section1--------*/
+#section1 { 
+	position: relative;
+	background-image: url(../images/neorobo/contact-bg1.svg), url(../images/neorobo/contact-bg2.svg) ;
+	background-position: left top, right bottom;
+	background-repeat: no-repeat;
+	background-size: 40%, 40%;
+	background-color: #f3f6f8;
+	margin: 0;
+	
+	@media (max-width: 991px) {padding: 50px 0; height: auto !important;}
+	
+	.copyright {position: absolute; left: 0; bottom: 15px; font-size: 14px; font-weight: bold; display: block; text-align: center;}
+	
+	
+	
+	.swing-live {display: flex;justify-content: center;align-items: center;
+        .title { 
+			h1 {padding: 0 0 40px 0; display: block; font-size: 50px; font-family: 'proxima_nova_altbold'; text-align: center; text-transform: uppercase;
+		
+		@media(max-width: 991px){font-size: 27px; padding-bottom: 20px;}
+		}
+		}
+
+        .left-1 { background: #fff;  padding: 63px 0px; border-right: 1px solid #f2f5f7; border-radius: 60px 0 0 60px; box-shadow: 0px 0px 20px #dddddd;
+			@media (max-width: 767px) {
+				padding: 35px; border-radius: 40px 40px 0 0; border-bottom: 3px solid #f2f5f7;
+			}
+			span { text-align: center; display: block;margin-top: 30px;
+				p{
+                    font-size: 13px;text-transform: uppercase;color: #fff;background: #252627;border-radius: 10px;padding: 3.3px 10px 2px 10px;line-height: 11px;letter-spacing: 1px;display: inline-block;position: absolute;left: 33%;transform: translate(-50%, -50%);margin-bottom: 0;top: 36%;
+                }
+
+				@media (max-width: 991px) { 
+				border-radius: 0 70px 70px 0;;
+				}
+				img {max-width: 55%;
+				
+					
+				}
+				
+			}
+		}
+		.right-1 { background: #fff;  padding: 66px 50px; border-radius: 0 60px  60px 0; box-shadow: 10px 0px 20px #dddddd;
+			
+			@media (max-width: 1500px) {
+				padding: 65px 50px;
+			}
+			
+			
+			
+			@media (max-width: 767px) {
+				padding: 35px; border-radius: 0 0 40px 40px; box-shadow: 10px 10px 20px #dddddd;
+			}
+			
+			span {font-size: 17px; display: block; color: #000; font-weight: bold; 
+			display: flex;
+    justify-content: center;
+    align-items: center;
+			
+				@media (max-width: 767px) {
+		padding-left: 0px; text-align: center;
+	}
+				img {max-width: 52%; display: block; margin-top: 10px; margin-bottom: 10px;
+					
+					@media (max-width: 767px) {
+						max-width: 50%; margin:10px auto; 
+					}
+			}
+				
+			}
+			
+			
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.row {margin: 0 15px;}
+	}
+		
+}
+
+/*-------section2--------*/
+#section2 { position: relative; 
+//	background: url(../images/neorobo/bg3.jpg) no-repeat top right; background-size: 40% 100%;
+//	background-color: #e97a04; /* For browsers that do not support gradients */
+//  background-image: linear-gradient(to right, #e97a04 , #e97403);
+	
+//	background-image: linear-gradient(to right, #e97a04 , #e97403), url(../images/neorobo/loomi-2-bg-bulb.jpg);
+//	background-position: left top, left top;
+//	background-repeat: repeat-y, no-repeat;
+//	background-size: 100%, 100%;
+	
+	background-image: url(../images/neorobo/neorobo-2-bg-big.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #329afb;
+	
+	.header {.logo {border: none; margin-top: -10px;}}
+	.container-fluid {
+		@media(max-width: 991px){ padding: 0;}
+	}
+	.left-2 { display: flex;align-items: center;
+		h2 {font-family: 'proxima_nova_altsemibold'; padding: 20px 0 10px 0px; display: block; font-size: 50px; color: #fff;  text-transform: uppercase;
+		
+		@media(max-width: 991px){margin-top: 30px; font-size: 30px; padding-left: 25px;}
+		
+			br {
+				@media(max-width: 576px){display: none;}
+			}
+		}
+	}
+	
+//	.right-2 { display: block; text-align: center; display: flex; align-items: center; justify-content: center;
+//		img {max-width: 80%;}
+//		
+//		}
+	
+	
+}
+
+/*-------section3--------*/
+#section3 { position: relative; 
+	
+	
+	.header {.logo {border: none;}}
+	
+	.top-4 {margin-top: 0px;
+		@media(max-width: 576px){margin-top: 0px;}
+	}
+	.left-3 { padding-right: 50px;
+		@media(max-width: 991px){padding-right: 10px;}
+		span { display: block;
+			img {}
+		}
+		h2 {padding: 20px 0 20px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold'; position: relative; margin-bottom: 20px;
+			
+			&:after {content: ""; position: absolute; left: 0; bottom: 5px; height: 3px; width: 70px; background:#43d0ca;}
+		
+		}
+		p {display: block; font-size: 20px;line-height: 30px; padding-bottom: 40px; margin-bottom: 0px; 
+		@media(max-width: 991px){
+			font-size: 20px;line-height: 30px; margin-bottom: 50px; 
+			}
+		
+		}
+	}
+	.right-3 {padding-left: 50px;
+		@media(max-width: 991px){padding-left: 10px;}
+		span { 
+			img {}
+		}
+		h2 {position: relative; padding: 20px 0 20px 0;  display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold';margin-bottom: 20px;
+			&:after {content: ""; position: absolute; left: 0; bottom: 5px; height: 3px; width: 70px; background:#43d0ca;}
+		
+		}
+		p {display: block; font-size: 20px;
+    line-height: 30px;
+		@media(max-width: 767px){font-size: 20px;line-height: 30px;}}
+		
+		ul.points {display: block; width: 90%; border-bottom: 2px solid #e4e4e4; 
+			
+			@media(max-width: 767px){width: 100%;}
+			
+			
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 5px 0 0 16px; background: url(../images/neorobo/bullet2.svg) no-repeat 0px 17px;  background-size: 6px;
+				
+				
+	}
+		}
+	}
+}
+
+
+
+/*-------section4--------*/
+#section4 { position: relative; 
+	
+	.header {.logo {border: none;}}
+.top-4 {margin-top: 40px;
+		@media(max-width: 576px){margin-top: 0px;}
+	}
+	.left-4 {
+		span { display: block;
+			img {}
+		}
+		h2 {padding: 20px 0 20px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold'; position: relative;margin-bottom: 20px;
+		&:after {content: ""; position: absolute; left: 0; bottom: 5px; height: 3px; width: 70px; background:#43d0ca;}
+		
+		}
+		ul.points {display: block; width: 90%; border-bottom: 2px solid #e4e4e4; 
+			
+			@media(max-width: 767px){width: 100%;}
+			
+			
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 5px 0 0 16px; background: url(../images/neorobo/bullet2.svg) no-repeat 0px 17px;  background-size: 6px;
+				
+				
+	}
+		}
+	}
+	.right-4 {
+		span { 
+			img {}
+		}
+		h2 {padding: 20px 0 20px 0; display: block; font-size: 30px; font-family: 'proxima_nova_altsemibold'; position: relative;margin-bottom: 20px;
+		&:after {content: ""; position: absolute; left: 0; bottom: 5px; height: 3px; width: 70px; background:#43d0ca;}
+		
+		}
+		p {display: block; font-size: 20px;
+    line-height: 30px;
+		@media(max-width: 767px){font-size: 20px;line-height: 30px;}}
+	}
+	ul.points {display: block; width: 90%; border-bottom: 2px solid #e4e4e4; 
+			
+			@media(max-width: 767px){width: 100%;}
+			
+			
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 5px 0 0 16px; background: url(../images/neorobo/bullet2.svg) no-repeat 0px 17px;  background-size: 6px;
+				
+				
+	}
+		}
+}
+
+/*-------section5--------*/
+#section5 { position: relative; overflow:hidden;
+	
+	.content {
+		@media(max-width: 1024px){margin-top: 50px; }
+	}
+	
+	.features { display: flex; justify-content: flex-start; align-items: center;
+		
+		ul.points {display: block; width: 90%; margin-bottom: 20px;
+			
+			@media(max-width: 767px){width: 100%;}
+			
+			
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 10px 0 0 28px; background: url(../images/neorobo/bullet.svg) no-repeat 0px 23px;  background-size: 15px;
+				
+				
+	}
+		}
+	
+	.right-img {
+		img {max-width: 85%;}
+	}
+	}
+	
+	
+}
+
+/*-------section6--------*/
+#section6 { position: relative; overflow:hidden;
+	
+	.content {
+		@media(max-width: 1024px){margin-top: 50px; }
+	}
+	
+	.features { display: flex; justify-content: flex-start; align-items: center;
+		
+		ul.points {display: block; width: 90%; margin-bottom: 20px;
+			
+			@media(max-width: 767px){width: 100%;}
+			
+			
+			li {
+		font-size: 20px; line-height: 30px; list-style: none; padding: 10px 0 0 28px; background: url(../images/neorobo/bullet.svg) no-repeat 0px 23px;  background-size: 15px;
+				
+				
+	}
+		}
+	
+	.right-img {
+		img {max-width: 85%;}
+	}
+	}
+}
+
+/*-------section7--------*/
+#section7 { position: relative; overflow:hidden;
+	
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 0px; left: 50%; width: 99%; transform: translateX(-50%);
+		
+	@media(max-width: 991px){ position: inherit; bottom: 0px; margin-top: 40px;
+		}
+			
+			
+			@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+				width: 94%;
+			}
+			
+			@media only screen and (min-width: 1401px) and (max-width: 1500px) {
+				width: 100%;
+			}
+			
+			@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+				width: 96%;
+			}
+	} 
+	}
+		
+}
+
+/*-------section8--------*/
+#section8 { position: relative; 
+	
+	.support { margin-top: 8%;
+		
+		.df {display: flex;}
+		
+	.box { background: #fff; border-radius: 20px; box-shadow: 0px 0px 30px #e2e2e2;width: 100%; padding:60px 45px;margin-bottom: 20px; position: relative;
+        img{
+            width: 100px;height: 100px;object-fit: contain;
+            margin-left: -15px;
+        }
+		&:after {content: ""; position: absolute; right: -32px; bottom: 43%; background: url(../images/neorobo/arrow.svg) no-repeat;  width: 43px; height: 36px;
+		
+		@media(max-width: 767px){background: none;}
+		}
+		
+		
+		
+		p {display: block; font-size: 20px;
+    line-height: 30px;
+		@media(max-width: 767px){font-size: 18px;line-height: 27px;}
+
+		
+		}
+		
+	}
+		
+		.last {
+			&:after {background: none;}
+		}
+	}
+	
+}
+
+/*-------section 9/10 / 11--------*/
+#section9, #section10, #section11 { position: relative;
+	
+	.screen { display: block;  height: 100vh;
+		@media(max-width: 991px){
+			height: auto;
+		}
+		img {position: absolute; bottom: 0; left: 50%; width: 76%; bottom: 50%; transform: translate(-50%, 55%);
+		
+	@media(max-width: 991px){ position: inherit; margin-top: 40px;
+		}
+	}
+	}
+}
+
+
+
+
+
+/*-------section12--------*/
+#section12 {position: relative;
+	background-image: url(../images/neorobo/contact-bg1.svg), url(../images/neorobo/contact-bg2.svg) ;
+	background-position: left top, right bottom;
+	background-repeat: no-repeat;
+	background-size: 40%, 40%;
+	margin: 0;
+	
+	.thanks { width: 80%; padding: 25px 0; margin: 0 auto; font-size: 100px; text-align: center; text-transform: uppercase;
+		font-family: 'renogareregular'; border-bottom: 4px solid red;
+		
+		@media(max-width: 991px){  width: 95%; font-size: 80px;}
+@media(max-width: 767px){ font-size: 60px;}
+		@media(max-width: 576px){ font-size: 40px;}
+
+
+	}
+	
+	.welcome-bottom-links{margin: 50px 0;
+		
+		.bt-links {display: flex;flex-wrap: wrap;align-items: center;justify-content: center;
+			.lists{margin: 10px;
+				p.border-line{border-right: 1px solid #707070; padding-right: 40px;padding-left: 20px;font-size: 25px;
+					
+					@media(max-width: 991px){  font-size: 20px;
+						border-right:0PX;
+						.bor-none {border: none;}
+					}
+						@media(max-width: 767px){ font-size: 17px;}
+					@media(max-width: 576px){ border: none;}
+					
+					
+					img {margin-top: -7px;}
+					@media(max-width: 991px){  
+						.web { width: 10%;}
+						.mail {width: 10%;}
+						.tel {width: 12%;}
+						}
+						@media(max-width: 767px){
+						.web { width: 9%;}
+						.mail {width: 9%;}
+						.tel {width: 13%;}
+						}
+				span{ padding-left: 10px;
+				a {color: #333;
+					&:hover {color: #000; text-decoration: none;}
+				}
+				}
+			
+			}
+				.b-none {border-right: none!important;}
+		}
+}
+}
+	.footer-logo {margin: 0 auto; text-align: center;
+		img {width: 220px;}
+	}
+	
+}
+
+
+
+
+.fp-tableCell {
+	@media(max-width: 991px){
+			height: auto!important;
+		}
+}
+
+
+
+ #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13, #section14, #section15, #section16, #section17, #section18, #section19, #section20 {
+	font-size: 20px;
+	
+	@media (max-width: 991px){ 
+		height: auto !important;
+		padding:30px 20px!important;
+		h2 {font-size: 25px!important;}
+    }
+	 
+	 @media (max-width: 768px){ 
+		h2 {font-size: 20px!important;}
+    }
+	
+	@media (max-width: 567px){ 
+		.container-fluid {padding: 0;}
+    }
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

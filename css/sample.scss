@@ -1,0 +1,151 @@
+@import "mixins";
+
+body{
+	font-family: 'barlowlight';
+  	color:$primary-color;
+	font-size: 40px;
+	color: #333;
+}
+ul,li{
+	@include nospace();
+	list-style:none;
+}
+
+//.container-fluid{padding:0;}
+.h100 {height: 100%;}
+.relative {position: relative;}
+.full-height{
+	width:100%;
+	height: 100vh;
+}
+
+
+#fp-nav ul li .fp-tooltip{ color: #ccc;}
+#fp-nav ul li a span{ background: #ddd;}
+.btm-border{
+	@include gradiant();
+	height:10px;
+	width:100%;
+	position: absolute;
+    bottom: 0;
+	@media (max-width: 1024px) {display: none;}
+    @media (max-width: 767px) {display: none;}
+    @media (max-width: 576px) {display: none;}
+}
+
+
+
+.section {
+	@media (max-width: 991px) {
+		border-bottom: 2px solid #235ab4;
+	}
+	&:last-child {border-bottom: none;}
+}
+
+
+/*-------section1--------*/
+#section1 { background: #ec2127; color: #fff;
+	display: flex;justify-content: center;align-items: center;		
+}
+
+/*-------section2--------*/
+#section2 { 
+	
+}
+
+/*-------section3--------*/
+#section3 {
+	
+}
+
+
+/*-------section4--------*/
+#section4 { 
+	
+}
+
+/*-------section5--------*/
+#section5 { 
+	
+}
+
+/*-------section6--------*/
+#section6 { 
+	
+}
+
+/*-------section7--------*/
+#section7 { 
+	
+}
+
+/*-------section8--------*/
+#section8 { 
+	
+}
+
+/*-------section9--------*/
+#section9 { 
+	
+}
+
+/*-------section10--------*/
+#section10 { 
+	
+}
+
+/*-------section11--------*/
+#section11 { 
+	
+}
+
+/*-------section12--------*/
+#section12 { 
+	
+	
+}
+
+/*-------section13--------*/
+#section13 { 
+	
+}
+
+/*-------section14--------*/
+#section14 { 
+	
+}
+
+/*-------section15--------*/
+#section15 { 
+	
+}
+
+/*-------section16--------*/
+#section16 {
+	
+}
+
+/*-------section17--------*/
+#section17 { 
+	
+	
+}
+
+
+.fp-tableCell {
+	@media(max-width: 991px){
+			height: auto!important;
+		}
+}
+
+
+
+ 
+
+
+
+
+
+
+
+

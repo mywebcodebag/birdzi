@@ -1,0 +1,73 @@
+$primary-color: #383838;
+
+@mixin nospace(){
+	margin:0;
+	padding:0;
+}
+
+@mixin bg-props(){
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+@mixin btn-style(){ 
+
+}
+
+@mixin gradiant(){
+	background: linear-gradient(to right, #d6213f 40%, #a33482 60%);
+}
+
+@mixin diagonal-gradiant(){
+	background: linear-gradient(to bottom right, #d6213f, #a33482);
+}
+
+@mixin font-gradiant(){
+	background: linear-gradient( to right,#d42142 40% , #a33482 60%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+@mixin header-style(){
+	font-family: 'renogareregular';
+	font-size:50px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+
+
+@mixin grid($cols,$mgn){
+	float:left;
+	margin-right: $mgn;
+	margin-bottom: $mgn;
+	width:((100% - (($cols - 1) * $mgn)) / $cols);
+
+	&:nth-child( #{$cols}n){
+		margin-right:0;
+	}
+}
+
+@mixin mQ($wid...){
+	@if length($wid) == 1{
+		@media screen and (max-width: nth($wid, 1)){
+			@content;
+		}
+	}
+	@if length($wid) == 2{
+		@media screen and (max-width: nth($wid, 1)) and (min-width: nth($wid, 2)){
+			@content;
+		}
+	}
+	
+}
+
+@mixin min-mQ($wid){
+	@media screen and (min-width:$wid){
+		@content;
+	}
+}
+
